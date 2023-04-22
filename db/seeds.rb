@@ -12,7 +12,7 @@ begin
   5.times do |i|
     name = Faker::Movies::StarWars.character
     Board.create(name: name)
-    4.times do |j|
+    1.times do |j|
       Post.create(title: "#{name} Quote #{j+1}", content: Faker::Movies::StarWars.quote)
     end
   end
